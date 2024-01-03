@@ -49,7 +49,7 @@ namespace Lab3oop
         }
         private static GameAccount SelectedAccountType(GameAccountService service)
         {
-            Console.WriteLine("Оберіть аккаунт: \n | 1. StandardGameAccount | 2. BonusGameAccount | 3-StreakGameAccount |:");
+            Console.WriteLine("Оберіть аккаунт: \n | 1. StandardGameAccount | 2. PremiumGameAccount | 3. ProGameAccount |:");
             int response = Convert.ToInt32(Console.ReadLine());
             var id = service.GetAll().Count();
 
